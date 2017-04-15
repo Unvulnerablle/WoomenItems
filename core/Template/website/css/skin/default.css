@@ -1,3 +1,23 @@
+html {
+	direction: ltr;
+}
+
+body {
+	background-color: white;
+	color: #777777;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 479px) {
+	body {
+		font-size: 13px;
+	}
+}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
 	color: #0e0e0e;
@@ -234,4 +254,35 @@ select {
 
 .label {
 	font-weight: normal;
+}
+
+/* Miscellaneous */
+body a {
+	outline: none !important;
+}
+
+li {
+	line-height: 24px;
+}
+
+/* Clearfix */
+.clearfix {
+	display: inline-block;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
 }
